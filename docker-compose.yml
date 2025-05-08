@@ -1,0 +1,11 @@
+version: '3'
+services:
+  pokerai:
+    build: .
+    platform: linux/amd64
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app
+    tty: true
+    stdin_open: true 
